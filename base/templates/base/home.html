@@ -13,7 +13,7 @@
 
     <hr />
     <div>
-     
+
       <a href="{% url 'home' %}"> All</a>
     </div>
     {%for topic in topics %}
@@ -25,10 +25,10 @@
   </div>
   <div>
     <h5>{{room_count}} rooms available</h5>
-    
+
     <a href="{%url 'create-room'%}"> Create Room</a>
     <div>
-      
+
       {%for room in rooms%}
       <div>
         {% if request.user == room.host %}
